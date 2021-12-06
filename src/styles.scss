@@ -1,0 +1,54 @@
+/* You can add global styles to this file, and also import other style files */
+/* ======= FONTS ====== */
+
+@font-face {
+  font-family: "Quicksand-Regular";
+  src: url("../src/assets/fonts/Quicksand/static/Quicksand-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Quicksand-Bold";
+  src: url("../src/assets/fonts/Quicksand/static/Quicksand-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Comfortaa-Regular";
+  src: url("../src/assets/fonts/Comfortaa/static/Comfortaa-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Comfortaa-Bold";
+  src: url("../src/assets/fonts/Comfortaa/static/Comfortaa-Bold.ttf") format("truetype");
+}
+
+* {
+  outline: 0;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Quicksand-Regular";
+  background-color: #5fc670;
+}
+
+img {
+  border-style: none;
+}
+
+img,
+svg {
+  vertical-align: middle;
+}
