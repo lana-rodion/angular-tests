@@ -9,7 +9,12 @@ export class PlaceComponent implements OnInit {
 
   constructor() { }
 
+  label = "button label";
+
   ngOnInit(): void {
   }
 
+  functionCall(event: any) {
+    console.log('functionCall', event);
+  }
 }

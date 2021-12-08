@@ -1,0 +1,21 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  width: 83vw;
+  border-radius: 50px;
+  font-size: 1.5em;
+  padding: 0.9em;
+  text-align: center;
+}
+
+.button--primary {
+  color: #444;
+  background-color: #fff;
+}
+
+.button--secondary {
+  color: rgb(90, 164, 138);
+  background-color: #444;
+}
