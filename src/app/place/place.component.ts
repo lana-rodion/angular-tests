@@ -9,8 +9,9 @@ export class PlaceComponent implements OnInit {
 
   constructor() { }
 
-  label = "button label";
-
+  labelPrim = "Primary button";
+  labelSecond = "Secondary button";
+  
   ngOnInit(): void {
   }
 

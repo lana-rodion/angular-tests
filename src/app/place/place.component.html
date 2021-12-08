@@ -5,11 +5,29 @@
         Emplacements disponibles
     </div>
     <div class="places">
-        <div class="places-choice"></div>
+        <div class="places-choice">
+            <div class="places-choice__item">
+                <img src="https://via.placeholder.com/120">
+            </div>
+            <div class="places-choice__item">
+                <img src="https://via.placeholder.com/120">
+            </div>
+            <div class="places-choice__item end">
+                <img class="" src="https://via.placeholder.com/120">
+            </div>
+
+            <div class="places-choice__item start">Rangée</div>
+            <div class="places-choice__item">Étagère</div>
+            <div class="places-choice__item end">Hauteur</div>
+
+            <div class="places-choice__item start">1</div>
+            <div class="places-choice__item">2</div>
+            <div class="places-choice__item end">3</div>
+        </div>
     </div>
 </div>
 
 <div class="buttons-container">
-    <a class="button button--primary"></a>
-    <app-button (onClick)="functionCall($event)" [label]="label"></app-button>
+    <app-button class="button button--primary" (onClick)="functionCall($event)" [label]="labelPrim"></app-button>
+    <app-button class="button button--secondary" (onClick)="functionCall($event)" [label]="labelSecond"></app-button>
 </div>
