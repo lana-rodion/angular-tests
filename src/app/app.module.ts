@@ -9,6 +9,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { ButtonComponent } from './components/button/button.component';
 
 const routes: Routes = [
+  { path: '', component: AppComponent },
   { path: 'place', component: PlaceComponent }
 ]
 

@@ -7,15 +7,17 @@ import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 })
 export class ButtonComponent implements OnInit {
   @Input() label: string = '';
-  @Output() onClick = new EventEmitter<any>();
+  @Input() color: string = '';
+  @Input() background: string = '';
+  @Output() click = new EventEmitter<MouseEvent>();
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  onClickButton(event: any) {
-    this.onClick.emit(event);
+  onClickButton(event: MouseEvent | undefined) {
+    this.click.emit(event);
   }
 
 }

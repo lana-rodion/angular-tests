@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-place',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlaceComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   labelPrim = "Primary button";
   labelSecond = "Secondary button";
@@ -15,7 +16,8 @@ export class PlaceComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  functionCall(event: any) {
+  functionCall(event: MouseEvent | undefined, path: string = '') {
+    this.router.navigateByUrl(path);
     console.log('functionCall', event);
   }
 }

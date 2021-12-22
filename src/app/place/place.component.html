@@ -28,6 +28,6 @@
 </div>
 
 <div class="buttons-container">
-    <app-button class="button button--primary" (onClick)="functionCall($event)" [label]="labelPrim"></app-button>
-    <app-button class="button button--secondary" (onClick)="functionCall($event)" [label]="labelSecond"></app-button>
+    <app-button [ngClass]="'button button--primary'" (click)="functionCall($event, '')" [label]="labelPrim"></app-button>
+    <app-button [ngClass]="'button button--secondary'" (click)="functionCall($event)" [label]="labelSecond"></app-button>
 </div>

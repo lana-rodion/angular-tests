@@ -1,1 +1,4 @@
 <router-outlet></router-outlet>
+<div class="buttons-container">
+    <app-button [ngClass]="'button button--primary'" (click)="functionCall($event, '/place')" [label]="labelFirst"></app-button>
+</div>
