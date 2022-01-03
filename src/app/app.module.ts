@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { PlaceComponent } from './place/place.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ButtonComponent } from './components/button/button.component';
+import { ModalComponent } from './components/modal/modal.component';
 
 const routes: Routes = [
   { path: '', component: AppComponent },
@@ -18,7 +19,8 @@ const routes: Routes = [
     AppComponent,
     PlaceComponent,
     NavbarComponent,
-    ButtonComponent
+    ButtonComponent,
+    ModalComponent,
   ],
   imports: [
     BrowserModule,

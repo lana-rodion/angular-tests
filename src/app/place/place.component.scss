@@ -117,4 +117,14 @@
       background-color: #444;
     }
   }
+
+  .btn__rounded {
+    background-color: red;
+    width: auto;
+    height: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 25px;
+    margin: auto;
+  }
 }

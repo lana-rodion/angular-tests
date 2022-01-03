@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
+import { ModalComponent } from '../components/modal/modal.component';
 
 @Component({
   selector: 'app-place',
@@ -7,6 +8,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./place.component.scss']
 })
 export class PlaceComponent implements OnInit {
+
+  @ViewChild('modal', {static: false}) modal!: ModalComponent
 
   constructor(private router: Router) { }
 
@@ -19,5 +22,9 @@ export class PlaceComponent implements OnInit {
   functionCall(event: MouseEvent | undefined, path: string = '') {
     this.router.navigateByUrl(path);
     console.log('functionCall', event);
+  }
+
+  openModal() {
+    this.modal.open();
   }
 }

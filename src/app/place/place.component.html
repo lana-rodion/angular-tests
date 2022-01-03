@@ -1,33 +1,42 @@
 <app-navbar></app-navbar>
 
 <div class="page-wrapper">
-    <div class="infos">
-        Emplacements disponibles
-    </div>
+  <div class="infos">
+    Emplacements disponibles
+  </div>
     <div class="places">
         <div class="places-choice">
-            <div class="places-choice__item">
-                <img src="https://via.placeholder.com/120">
-            </div>
-            <div class="places-choice__item">
-                <img src="https://via.placeholder.com/120">
-            </div>
-            <div class="places-choice__item end">
-                <img class="" src="https://via.placeholder.com/120">
-            </div>
-
-            <div class="places-choice__item start">Rangée</div>
-            <div class="places-choice__item">Étagère</div>
-            <div class="places-choice__item end">Hauteur</div>
-
-            <div class="places-choice__item start">1</div>
-            <div class="places-choice__item">2</div>
-            <div class="places-choice__item end">3</div>
+        <div class="places-choice__item">
+            <img src="https://via.placeholder.com/120">
         </div>
+        <div class="places-choice__item">
+            <img src="https://via.placeholder.com/120">
+        </div>
+        <div class="places-choice__item end">
+            <img class="" src="https://via.placeholder.com/120">
+        </div>
+
+        <div class="places-choice__item start">Rangée</div>
+        <div class="places-choice__item">Étagère</div>
+        <div class="places-choice__item end">Hauteur</div>
+
+        <div class="places-choice__item start">1</div>
+        <div class="places-choice__item">2</div>
+        <div class="places-choice__item end">3</div>
     </div>
+  </div>
 </div>
 
 <div class="buttons-container">
     <app-button [ngClass]="'button button--primary'" (click)="functionCall($event, '')" [label]="labelPrim"></app-button>
     <app-button [ngClass]="'button button--secondary'" (click)="functionCall($event)" [label]="labelSecond"></app-button>
 </div>
+
+
+<app-modal #modal>
+    <p>Voulez-vous supprimer cette ligne ?</p>
+    <p><input type="checkbox" (click)="modal.close()">Oui, je confirme la suppression !</p>
+    <!-- <button (click)="modal.close()">Fermer</button> -->
+</app-modal>
+<button class="btn__rounded" (click)="modal.open()">Supprimer</button>
+
